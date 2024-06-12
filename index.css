@@ -46,7 +46,7 @@ body {
 		}
 
 		&:last-child {
-			--color: cyan;
+			--color: darkcyan;
 			transform: translate(.750em, .35em);
 		}
 	}
