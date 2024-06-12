@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    background-color: darkcyan;
+    margin: 5% 15%;
+    background-color: #273549;
 }
 
 .container {
@@ -13,6 +13,8 @@ body {
     font-size: 72px;
     font-family: sans-serif;
     font-weight: 600;
+    color: #273549;
+    -webkit-text-stroke: 2px white;
 }
 
 .score {
