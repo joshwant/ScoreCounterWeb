@@ -1,3 +1,4 @@
+// by Josh Want
 let homeScoreText = document.getElementById('homeScore')
 let awayScoreText = document.getElementById('awayScore')
 let displayMessageText = document.getElementById('displayMessage')
