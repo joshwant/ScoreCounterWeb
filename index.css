@@ -1,11 +1,55 @@
 body {
-    margin: 5% 15%;
+    margin: 0% 15%;
     background-color: #273549;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+}
+
+.wrapper {
+	font-size: 8vmin;
+	height: 2em;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	mix-blend-mode: screen;
+	
+	span {
+		--color: #ffba11;
+		font-family: Impact, 'Anton', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-weight: 700;
+		font-style: italic;
+		display: block;
+		position: absolute;
+		color: var(--color);
+		letter-spacing: -.005em;
+
+		&::before, &::after {
+			content: attr(data-text);
+			display: block;
+			position: relative;
+			padding: 0 .1em;
+			z-index: 1;
+		}
+
+		&::before {
+			position: absolute;
+			-webkit-text-stroke: .1em black;
+			z-index: 0;
+		}
+
+		&:first-child {
+			transform: translate(-.255em, -.25em);
+		}
+
+		&:last-child {
+			--color: cyan;
+			transform: translate(.750em, .35em);
+		}
+	}
 }
 
 .title {
@@ -19,6 +63,7 @@ body {
 
 .score {
     font-size: 100px;
+    font-family: Impact;
     text-align: center;
     color: lightcoral;
     background-color: black;
